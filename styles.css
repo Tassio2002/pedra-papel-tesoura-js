@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+header{
+   width: 100vw;
+   background-color: blueviolet;
+}
+
+main{
+    width: 100vw;
+    background-color: gainsboro;
+    display: flex;
+}
+
+main .player-side{
+    width: 50%;
+    padding: 3em 0;
+}
+
+.player-side .title {
+    width: 100%;
+    text-align: center;
+}
+
+.player-side aside {
+    width: 20%;
+    min-width: 150px;
+    padding: 2em 0;
+    border-top-right-radius: 1em;
+    border-bottom-right-radius: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(125, 181, 231);
+}
+
+.player-side aside .image {
+    width: 100px;
+    height: 100px;
+    margin: 2em 0;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(63, 113, 156);
+    cursor: pointer;
+}
+
+.image img{
+    width: 50px;
+    height: 50px;
+}
+footer{
+    width: 100vw;
+    background-color: blue;
+}
