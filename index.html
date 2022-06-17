@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="styles.css">
     <title>Pedra Papel ou Tesoura</title>
 </head>
+
 <body>
     <header>
         <h1>Pedra Papel ou Tesoura</h1>
@@ -16,26 +18,47 @@
             <div class="title">
                 <h2>Jogador 1</h2>
             </div>
-            <aside>
-                <div class="image">
-                    <img src="./assets/pedra.png" alt="Papel">
-                </div>
-                <div class="image">
-                    <img src="./assets/papel.png" alt="Papel">
-                </div>
-                <div class="image">
-                    <img src="./assets/tesoura.png" alt="Papel">
-                </div>
-            </aside>
+            <div class="container-1">
+                <aside>
+                    <div class="image" id="stone-1">
+                        <img src="./assets/pedra.png" alt="Pedra">
+                    </div>
+                    <div class="image" id="paper-1">
+                        <img src="./assets/papel.png" alt="Papel">
+                    </div>
+                    <div class="image" id="scissors-1">
+                        <img src="./assets/tesoura.png" alt="Tesoura">
+                    </div>
+                </aside>
+                <div id="table-1"></div>
+            </div>
         </div>
 
         <div id="player2side" class="player-side">
-            <h2>Jogador 2</h2>
+            <div class="title">
+                <h2>Jogador 2</h2>
+            </div>
+            <div class="container-2">
+                <aside id="player2-aside">
+                    <div class="image" id="stone-2">
+                        <img src="./assets/pedra.png" alt="Pedral">
+                    </div>
+                    <div class="image" id="paper-2">
+                        <img src="./assets/papel.png" alt="Papel">
+                    </div>
+                    <div class="image" id="scissors-2">
+                        <img src="./assets/tesoura.png" alt="Tesoura">
+                    </div>
+                </aside>
+                <div id="table-2"></div>
+            </div>
+
         </div>
     </main>
     <footer>
         <h3>Rodapé da página</h3>
     </footer>
-    
+    <script src="main.js"></script>
 </body>
+
 </html>

@@ -1,25 +1,40 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Courier New', Courier, monospace;
 }
 
-header{
-   width: 100vw;
-   background-color: blueviolet;
+body {
+    overflow: hidden;
 }
 
-main{
+header {
+    width: 100vw;
+    background-color: blueviolet;
+}
+
+main {
     width: 100vw;
     background-color: gainsboro;
     display: flex;
 }
 
-main .player-side{
+main .player-side {
     width: 50%;
     padding: 3em 0;
 }
+
+main .container-1,
+main .container-2 {
+    width: 100%;
+    display: flex;
+}
+
+.container-2 {
+    justify-content: end;
+}
+
 
 .player-side .title {
     width: 100%;
@@ -27,8 +42,8 @@ main .player-side{
 }
 
 .player-side aside {
-    width: 20%;
-    min-width: 150px;
+    width: 15%;
+    min-width: 100px;
     padding: 2em 0;
     border-top-right-radius: 1em;
     border-bottom-right-radius: 1em;
@@ -39,23 +54,33 @@ main .player-side{
     background-color: rgb(125, 181, 231);
 }
 
+#player2-aside {
+    border-top-right-radius: 0em;
+    border-bottom-right-radius: 0em;
+    border-top-left-radius: 1em;
+    border-bottom-left-radius: 1em;
+    order: 1;
+
+}
+
 .player-side aside .image {
-    width: 100px;
-    height: 100px;
-    margin: 2em 0;
+    width: 80px;
+    height: 80px;
+    margin: 1em 0;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(63, 113, 156);
+    background-color: rgb(22, 128, 221);
     cursor: pointer;
 }
 
-.image img{
-    width: 50px;
-    height: 50px;
+.image img {
+    width: 36px;
+    height: 36px;
 }
-footer{
+
+footer {
     width: 100vw;
     background-color: blue;
 }
